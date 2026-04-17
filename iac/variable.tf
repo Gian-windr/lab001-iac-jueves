@@ -1,2 +1,11 @@
-variable "web_port" {}
-variable "api_port" {}
+variable "web_port" {
+  type = map(number)
+}
+
+variable "api_port" {
+  type = map(number)
+}
+
+variable "db_port" {
+  type = map(number)
+}
